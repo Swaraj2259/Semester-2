@@ -1,4 +1,4 @@
-Modify the file-reading program to handle exceptions (e.g., file not found) gracefully.
+# Modify the file-reading program to handle exceptions (e.g., file not found) gracefully.
 
 def read_file_with_exception_handling(filename):
     try:
