@@ -1,4 +1,4 @@
-Create a class that uses the @property decorator to get/set an attribute with some validation logic.
+# Create a class that uses the @property decorator to get/set an attribute with some validation logic.
 
 class Person:
     def __init__(self, name, age):

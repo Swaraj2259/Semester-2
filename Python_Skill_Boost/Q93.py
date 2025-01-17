@@ -1,4 +1,4 @@
-Demonstrate encapsulation by creating a class with private attributes and use getter and setter methods to access/modify them.
+# Demonstrate encapsulation by creating a class with private attributes and use getter and setter methods to access/modify them.
 
 class Person:
     def __init__(self, name, age):

@@ -1,4 +1,4 @@
-In the Dog class, override a method speak defined in Animal (e.g., Animal says “Some sound”, but Dog says “Woof!”).
+# In the Dog class, override a method speak defined in Animal (e.g., Animal says “Some sound”, but Dog says “Woof!”).
 
 class Animal:
     def __init__(self, name):
@@ -17,4 +17,4 @@ class Dog(Animal):
 
 # Example usage:
 dog = Dog("Buddy", "Golden Retriever")
-print(dog.speak())  # Overridden method, Output: Woof!
+print(dog.speak())  

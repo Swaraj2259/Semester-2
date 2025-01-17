@@ -1,13 +1,10 @@
 # Demonstrating string slicing
 s = "Hello, World!"
 
-# Reverse the string
 print("Reversed string:", s[::-1])
 
-# Skip every other letter
 print("Skipping letters:", s[::2])
 
-# Slice a substring
 print("Substring (from index 0 to 4):", s[0:5])
 
 

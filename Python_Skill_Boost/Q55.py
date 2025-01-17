@@ -3,7 +3,7 @@
 import csv
 
 # Open the CSV file in read mode
-with open('file.csv', 'r') as file:
+with open('example.csv', 'r') as file:
     csv_reader = csv.reader(file)
     
     # Print each row in the CSV file

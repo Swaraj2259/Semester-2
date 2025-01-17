@@ -1,4 +1,4 @@
-Implement a Python class that overloads the __str__ method to return a string representation of the object.
+# Implement a Python class that overloads the __str__ method to return a string representation of the object.
 
 class Person:
     def __init__(self, name, age):

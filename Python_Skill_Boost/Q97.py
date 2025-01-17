@@ -1,4 +1,4 @@
-Create a class Point that overloads the + operator (using __add__) to add the coordinates of two Point objects.
+# Create a class Point that overloads the + operator (using __add__) to add the coordinates of two Point objects.
 
 class Point:
     def __init__(self, x, y):

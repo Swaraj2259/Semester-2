@@ -1,4 +1,4 @@
-Write a Python script to read a CSV file and print each row.
+# Write a Python script to read a CSV file and print each row.
 
 import csv
 

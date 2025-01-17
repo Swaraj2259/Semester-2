@@ -1,4 +1,4 @@
-Write a program to search for a specific substring in a file and print the lines where it appears.
+# Write a program to search for a specific substring in a file and print the lines where it appears.
 
 def search_in_file(filename, substring):
     with open(filename, 'r') as file:

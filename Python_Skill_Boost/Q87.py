@@ -1,4 +1,4 @@
-Add a method greet to the Person class that prints "Hello, my name is <name>".
+# Add a method greet to the Person class that prints "Hello, my name is <name>".
 
 class Person:
     def __init__(self, name, age):

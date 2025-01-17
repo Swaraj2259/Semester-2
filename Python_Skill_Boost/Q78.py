@@ -1,10 +1,12 @@
-Write a Python program to copy the contents of one file to another.
+# Write a Python program to copy the contents of one file to another.
 
-def copy_file(source, destination):
-    with open(source, 'r') as src_file:
-        content = src_file.read()
-    with open(destination, 'w') as dest_file:
-        dest_file.write(content)
+source_file = "source.txt"  # Name of the file to copy from
+destination_file = "destination.txt"  # Name of the file to copy to
 
-# Example usage:
-copy_file('source.txt', 'destination.txt')
+with open(source_file, "r") as src:
+    content = src.read()
+
+with open(destination_file, "w") as dest:
+    dest.write(content)
+
+print(f"Contents of '{source_file}' have been copied to '{destination_file}'.")

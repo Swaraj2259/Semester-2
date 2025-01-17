@@ -1,10 +1,10 @@
-Write a program that counts how many lines are in a file.
+# Write a program that counts how many lines are in a file.
 
-def line_count(filename):
-    with open(filename, 'r') as file:
-        lines = file.readlines()  # Read all lines in the file
-        return len(lines)
+file_name = "source.txt"  
 
-# Example usage:
-filename = 'example.txt'
-print(f"Line count: {line_count(filename)}")
+with open(file_name, "r") as file:
+    lines = file.readlines()
+
+line_count = len(lines)
+
+print(f"The file '{file_name}' contains {line_count} lines.")

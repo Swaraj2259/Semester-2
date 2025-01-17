@@ -1,4 +1,4 @@
-Write a program that appends a user-input line to an existing file without overwriting it.
+# Write a program that appends a user-input line to an existing file without overwriting it.
 
 def append_to_file(filename):
     user_input = input("Enter a line to append: ")

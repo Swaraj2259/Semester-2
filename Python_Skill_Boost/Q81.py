@@ -1,8 +1,8 @@
 # Modify the file-reading program to handle exceptions (e.g., file not found) gracefully.
 
-def read_file_with_exception_handling(filename):
+def read_file_with_exception_handling(source.txt):
     try:
-        with open(filename, 'r') as file:
+        with open("source.txt", 'r') as file:
             content = file.read()
             print(content)
     except FileNotFoundError:

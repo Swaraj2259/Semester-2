@@ -1,4 +1,4 @@
-Create classes Rectangle and Square. Square should inherit from Rectangle (or implement composition) in a way that automatically sets the length and width to the same value.
+# Create classes Rectangle and Square. Square should inherit from Rectangle (or implement composition) in a way that automatically sets the length and width to the same value.
 
 class Rectangle:
     def __init__(self, length, width):

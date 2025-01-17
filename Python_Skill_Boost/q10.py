@@ -12,5 +12,5 @@ A = P * (1 + r / n) ** (n * t)
 CI = A - P
 
 # Output results
-print(f"Total Amount (A): {A:.2f}")
-print(f"Compound Interest (CI): {CI:.2f}")
+print(f"Total Amount (A): {A}")
+print(f"Compound Interest (CI): {CI}")

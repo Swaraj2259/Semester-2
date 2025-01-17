@@ -2,7 +2,6 @@
 
 import sys
 
-# Check if there are command-line arguments passed (excluding the script name)
 if len(sys.argv) > 1:
     print("Command-line arguments:")
     for arg in sys.argv[1:]:

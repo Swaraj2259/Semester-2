@@ -1,4 +1,4 @@
-Create a base class Animal and a derived class Dog. The Dog class should inherit attributes and methods from Animal.
+# Create a base class Animal and a derived class Dog. The Dog class should inherit attributes and methods from Animal.
 
 class Animal:
     def __init__(self, name):

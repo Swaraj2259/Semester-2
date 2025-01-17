@@ -1,4 +1,4 @@
-Demonstrate multiple inheritance with two parent classes providing different functionalities to a child class.
+# Demonstrate multiple inheritance with two parent classes providing different functionalities to a child class.
 
 class Animal:
     def speak(self):

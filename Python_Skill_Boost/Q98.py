@@ -1,4 +1,4 @@
-Use the abc module to define an abstract base class Shape with an abstract method area(). Implement subclasses Circle and Rectangle.
+# Use the abc module to define an abstract base class Shape with an abstract method area(). Implement subclasses Circle and Rectangle.
 
 
 from abc import ABC, abstractmethod

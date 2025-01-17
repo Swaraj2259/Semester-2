@@ -1,4 +1,4 @@
-Write a program that finds the longest word in a text file and prints 
+# Write a program that finds the longest word in a text file and prints 
 
 def find_longest_word(filename):
     with open(filename, 'r') as file:
@@ -7,5 +7,5 @@ def find_longest_word(filename):
         return longest_word
 
 # Example usage:
-filename = 'example.txt'
+filename = 'source.txt'
 print(f"The longest word is: {find_longest_word(filename)}")
