@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/swarajwattamwar/Desktop/Semester-2/dsa_in_c++/output/bubbleSort'
+relocations:     []
+...

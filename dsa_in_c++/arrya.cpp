@@ -111,6 +111,10 @@
 //     return 0;
 // };
 
+
+// '''Write a C++ program to find the smallest and largest numbers in a predefined array 
+// and print their respective indixes. Use INT_MAX and INT_MIN .'''
+
 #include <iostream>
 // #include <climits> // For INT_MAX and INT_MIN
 using namespace std;
