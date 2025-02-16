@@ -13,7 +13,6 @@ def binary_search(arr, target, low, high):
     else:
         return binary_search(arr, target, low, mid - 1)  # Search in the left half
 
-# Example
 arr = list(map(int, input("Enter sorted numbers (separated by spaces): ").split()))
 target = int(input("Enter the number to search for: "))
 

@@ -1,11 +1,11 @@
 # Function to check if a number is prime
 def is_prime(num):
     if num <= 1:
-        return False  # Numbers less than or equal to 1 are not prime
-    for i in range(2, int(num ** 0.5) + 1):  # Check divisibility up to the square root of num
+        return False 
+    for i in range(2, int(num ** 0.5) + 1):  
         if num % i == 0:
             return False  # If divisible by any number other than 1 and itself, it's not prime
-    return True  # The number is prime
+    return True  
 
 
 start = int(input("Enter the start of the range: "))

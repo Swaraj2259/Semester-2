@@ -4,3 +4,27 @@
 password = input("Enter your password: ")
 masked_password = '*' * len(password)
 print("Masked password:", masked_password)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import getpass
+
+
+# password = getpass.getpass("Enter your password: ")
+# print(len(password)*"*")    

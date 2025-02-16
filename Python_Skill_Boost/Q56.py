@@ -10,3 +10,4 @@ def convert_to_int(s):
 # Example usage
 user_input = input("Enter a string to convert to integer: ")
 convert_to_int(user_input)
+

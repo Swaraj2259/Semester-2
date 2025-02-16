@@ -2,5 +2,7 @@
 # Question:
 # Prompt the user for a number (as a string) and compute the sum of its digits.
 number = input("Enter a number: ")
-sum_digits = sum(int(digit) for digit in number)
-print("Sum of digits:", sum_digits)
+sum=0
+for each in number:
+    sum=sum+int(each)
+print(f"Sum is :{sum}")

@@ -1,11 +1,9 @@
-# Implement the bubble sort algorithm
-numbers = list(map(int, input("Enter numbers to sort (separated by spaces): ").split()))
+def transpose_matrix(matrix):
+    return [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
 
-# Bubble Sort
-for i in range(len(numbers)):  # Go through the list multiple times
-    for j in range(len(numbers) - i - 1):  # Compare each pair of numbers
-        if numbers[j] > numbers[j + 1]:  # If the first number is bigger, swap them
-            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
-
-# Print the sorted list
-print("Sorted list:", numbers)
+matrix = [[int(input(f"Matrix[{i}][{j}]: ")) for j in range(3)] for i in range(3)]
+# print("Original matrix:",matrix)
+transposed = transpose_matrix(matrix)
+print("Transposed matrix:")
+for row in transposed:
+    print(row)

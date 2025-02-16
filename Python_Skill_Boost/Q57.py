@@ -1,7 +1,7 @@
 # Search for a specific word in a file and replace it with another word, then overwrite the file with the changes.
 
-search_word = 'oldword'
-replace_word = 'newword'
+search_word = 'college'
+replace_word = 'hostel'
 
 with open('file.txt', 'r') as file:
     content = file.read()
