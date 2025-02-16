@@ -7,7 +7,8 @@ class employee{
         this.empId = id;
         this.empName = name;
     }
-
+ 
+    @SuppressWarnings("unused")
     void display() {
         System.out.println("ID: " + empId + ", Name: " + empName);
     }
@@ -23,6 +24,7 @@ class manger extends employee{
 
 
     }
+    @Override
     void display(){
         System.out.println("ID: " + empId + ", Name: " + empName + ", Department: " + department);
     }
@@ -37,6 +39,7 @@ class engineer extends employee{
         super(id,name);
         this.project = project;
     }
+    @Override
     void display(){
         System.out.println("ID: " + empId + ", Name: " + empName + ", Project: " + project);
     }
@@ -49,6 +52,7 @@ class Salesperson extends employee{
         super(id,name);
         this.sales = sales;
     }
+    @Override
     void display(){
         System.out.println("ID: " + empId + ", Name: " + empName + ", Sales: " + sales);
     }
