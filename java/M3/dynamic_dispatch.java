@@ -17,6 +17,7 @@ class C extends A {
         System.out.println("Inside C's callme method");
     }
 }
+@SuppressWarnings("unused")
 class basics {
     public static void main(String args[]) {
         A a = new A(); // object of type A

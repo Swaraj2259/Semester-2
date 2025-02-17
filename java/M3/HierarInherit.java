@@ -13,8 +13,10 @@ class dog extends animal{
         System.out.println(name+" bark");
     }
     dog(){}
+    @SuppressWarnings("unused")
     dog(String n){super(n);}
 }
+@SuppressWarnings("unused")
 class cat extends animal{
     public void meow(){
         System.out.println(name+" meow");
@@ -22,6 +24,7 @@ class cat extends animal{
     
 
 }
+@SuppressWarnings("unused")
 class HierarInherit {
     public static void main(String[] args) {
         animal a = new animal();
