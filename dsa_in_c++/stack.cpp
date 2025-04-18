@@ -58,6 +58,7 @@ int main() {
 void push(int st[], int val) {
     if (top == MAX - 1) {
         cout << "Stack is full, STACK OVERFLOW" << endl;
+    return;
     } else {
         top++;
         st[top] = val;

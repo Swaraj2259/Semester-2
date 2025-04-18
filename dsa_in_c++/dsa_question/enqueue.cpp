@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+#define MAX 5  
+
+class Queue {
+private:
+    int arr[MAX]; 
+    int front, rear; 
+
+public:
+    Queue() { 
+        front = -1; 
+        rear = -1; 
+    }
+
+    
+    void enqueue(int value) {
+        if (rear == MAX - 1) {
+            cout << "Queue Overflow! Cannot insert " << value << endl;
+            return;
+        }
+        if (front == -1) front = 0; 
+        arr[++rear] = value;
+        cout << value << " enqueued into queue." << endl;
+    }
+
+    
+    void dequeue() {
+        if (front == -1 || front > rear) {
+            cout << "Queue Underflow! No elements to dequeue." << endl;
+            front = rear = -1; 
+            return;
+        }
+        cout << "Dequeued element: " << arr[front++] << endl;
+    }
+
+    // Display operation
+    void display() {
+        if (front == -1 || front > rear) {
+            cout << "Queue is empty!" << endl;
+            return;
+        }
+        cout << "Queue elements: ";
+        for (int i = front; i <= rear; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    Queue queue;
+
+    queue.enqueue(10);
+    queue.enqueue(20);
+    queue.enqueue(30);
+    queue.display();
+
+    queue.dequeue();
+    queue.display();
+
+    return 0;
+}
