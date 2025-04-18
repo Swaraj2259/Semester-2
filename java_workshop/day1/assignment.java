@@ -57,6 +57,6 @@ public class assignment {
         }
         System.out.println("Factorial of " + num + " is: " + factorial);
         
-        scanner.close();
+        // scanner.close();
     }
 }
