@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p {
+      font-family: Arial, sans-serif;   /* Cool font */
+      color: #555;                      /* Chill gray */
+      line-height: 1.6;                 /* Breathing space */
+      font-size: 1.2em;                 /* Bumped-up size */
+      max-width: 700px;
+      margin: 40px auto;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    Great ideas deserve great presentation. Whether you're solving global challenges or sharing your unique perspective, your message should shine with clarity and confidence. Let every word resonate and every sentence inspire.
+  </p>
+
+</body>
+</html>
