@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Punishment </title>
+ 
+</head>
+<style>
+       section {
+            padding: 8px;
+            margin: 5px;
+            border: 10px solid #ccc;
+        }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #4c74b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: rgb(240, 233, 233);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(252, 17, 17, 0.1);
+    width: 350px;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 10px;
+    margin-top: 25px;
+    border: 1px solid #e4040f;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .gender-options {
+    padding: 10px;
+    border: 1px solid #c32626;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 15px;
+  }
+  
+  textarea {
+    height: 100px;
+    
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #af4c4c;
+    color: rgb(204, 233, 199);
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+</style>
+  
+<body>
+
+<div class="form-container">
+  <form>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="swaraj">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="2024.swarajw@isu.ac.in">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+91 7820858979">
+
+    <br>
+
+    <fieldset>
+    <legend><b>Gender:</b></legend>
+    
+      <label><input type="radio" name="gender" value="male"> Male</label><br>
+      <label><input type="radio" name="gender" value="female"> Female</label><br>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="India">India</option>
+      <option value="Australia">Australia</option>
+      <option value="England">England</option>
+    </select>
+
+    <label>Subscribe to our newsletter: <input type="checkbox" name="newsletter"></label>
+    <br>
+
+    <label for="resume">Upload Resume:</label>
+
+    <section class="section">
+    <input type="file" id="resume" name="resume">
+    </section>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Hello"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
