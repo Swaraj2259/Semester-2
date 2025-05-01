@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  h1 {
+    margin: 40px 0;
+  }
+  
+  .box {
+    
+    background-color: #4caf50;
+    color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* px + rem */
+  .rem-px {
+    max-width: 300px;
+    padding: 2rem;
+
+  }
+  
+  /* vw + vh */
+  .vw-vh {
+    width: 30vw;
+    height: 30vh;
+  }
+  
+  /* % */
+  .percent {
+    width: 50%;
+    height: 100px;
+  }
+  
+  /* vmin */
+  .vmin {
+    width: 20vmin;
+    height: 30vmin;
+  }
+  
+  /* em */
+  .em {
+    font-size: 2em;
+    width: 20em;
+    padding: 1em;
+  }
