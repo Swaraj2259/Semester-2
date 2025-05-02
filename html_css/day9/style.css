@@ -1,0 +1,600 @@
+body {
+    background-color: #d6166c;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d8ace3;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    animation: colorChange 4s;
+    background-color: rgb(23, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto
+  }
+
+  @keyframes colorChange {
+    from { background-color: red; }
+    to { background-color: yellow; }
+  
+  }
+
+ #t2 .multi {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: moveColor 10s forwards;
+  }
+
+  @keyframes moveColor {
+    0%   { left: 0; background: red; }
+    25%  { left: 50px; background: orange; }
+    50%  { left: 100px; background: yellow; }
+    75% { left: 200px; background: green; }
+    95% { left: 300px; background: blue; }
+    100% { left: 400px; background: purple; }
+    100% { left: 500px; background: pink; }
+    
+  }
+
+  .pulse {
+    width: 100px;
+    height: 150px;
+    border-radius: 40%;
+    background: blue;
+    animation: pulseAnim 2s infinite alternate;
+    margin: auto;
+  }
+
+  @keyframes pulseAnim {
+    from { transform: scale(1); }
+    to   { transform: scale(1.2); }
+  }
+
+  .hover-btn:hover {
+    background-color: lightgreen;
+
+ 
+  }
+
+    .hover-btn {
+        padding: 10px 20px;
+        background-color: #345c36;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+    input:focus {
+        border: 2px solid royalblue;
+        outline: none;
+      }
+
+    input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+    li:first-child {
+            color: red;
+            
+    }
+
+    li {
+            list-style-position: inside;
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+
+    #t7 h2::before {
+            content: "🔹 ";
+          }
+
+    #t8  p::first-letter {
+        font-size: 200%;
+        color: darkorange;
+      }
+
+
+    #t9 li::marker {
+        content: "➤ ";
+        color: purple;
+      }
+
+      .shine-btn {
+        position: relative;
+        padding: 12px 30px;
+        background: #3498db;
+        color: white;
+        border: none;
+        overflow: hidden;
+        font-size: 16px;
+      }
+    
+      .shine-btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: skewX(-20deg);
+      }
+    
+      .shine-btn:hover::after {
+        animation: slide-shine 0.75s linear forwards;
+      }
+    
+      @keyframes slide-shine {
+        to { left: 125%; }
+      }
+
+
+      .box {
+        width: 100px;
+        height: 100px;
+        animation-name: slideRight;
+        animation-duration: 2s;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @keyframes slideRight {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100px);
+        }
+    }
+    
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: blue;
+        margin: auto;
+        animation-delay: 2s;
+        animation-name: pulseAnim;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes pulseAnim {
+        0% {
+            background: blue;
+        }
+        50% {
+            background: green;
+        }
+        100% {
+            background: blue;
+        }
+    }
+    
+    
+    .bouncy {
+        width: 80px;
+        height: 80px;
+        background: rgb(0, 255, 72);
+        animation-name: bounceAnim;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        margin: auto;
+    }
+    @keyframes bounceAnim {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-50px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    .yo-yo {
+        width: 80px;
+        height: 80px;
+        background: rgb(255, 0, 0);
+        animation-name: yoYoAnim;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        margin: auto;
+        border-radius: 50px;
+    }
+    
+    @keyframes yoYoAnim {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100px);
+        }
+    }
+    
+    
+    .timing-container {
+        position: relative;
+        height: 350px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    
+    .timing-box {
+        width: 80px;
+        height: 50px;
+        position: relative;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: moveRight;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    
+    .label {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    }
+    
+    .linear {
+        background-color: #3498db;
+        animation-timing-function: linear;
+    }
+    
+    .ease-in {
+        background-color: #e74c3c;
+        animation-timing-function: ease-in;
+    }
+    
+    .ease-out {
+        background-color: #2ecc71;
+        animation-timing-function: ease-out;
+    }
+    
+    .ease-in-out {
+        background-color: #9b59b6;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes moveRight {
+        from {
+            left: 0;
+        }
+        to {
+            left: calc(100% - 80px); 
+        }
+    }
+    
+    #restart-animation {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    #restart-animation:hover {
+        background-color: #555;
+    }
+    
+    
+    
+    .growing-circle {
+        width: 100px;
+        height: 100px;
+        background-color: #e67e22;
+        border-radius: 50%;
+        animation: growAndStay 3s forwards;
+        margin: auto;
+        animation-fill-mode: forwards;
+    
+    }
+    @keyframes growAndStay {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
+    
+    .faded {
+        width: 100px;
+        height: 100px;
+        background-color: #e74c3c;
+        animation: fadeIn 2s forwards;
+        margin: auto;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    .toggle {
+        width: 100px;
+        height: 100px;
+        background-color: #8e44ad;
+        margin: 20px auto;
+        animation: slideBackForth 3s infinite alternate ease-in-out;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    @keyframes slideBackForth {
+        0% {
+            left: -150px;
+            background-color: #8e44ad;
+        }
+        100% {
+            left: 150px;
+            background-color: #3498db;
+        }
+    }
+    
+    .paused {
+        animation-play-state: paused;
+    }
+    
+    #toggle-animation {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 20px;
+    }
+    
+    #toggle-animation:hover {
+        background-color: #555;
+    }
+    
+    
+    .loading-container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        margin: 30px auto;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    
+    
+    .pause-instruction {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        background-color: rgba(255,255,255,0.7);
+        padding: 5px 0;
+        cursor: pointer;
+    }
+    
+    
+    .loading-container:hover .progress-bar,
+    .loading-container:hover .dot,
+    .loading-container:hover .spinner,
+    .loading-container:hover .loading-text {
+        animation-play-state: paused;
+    }
+    
+    
+    .progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #3498db, #9b59b6);
+        animation: fillProgress 3s ease-in-out infinite;
+        animation-fill-mode: both; 
+        width: 0;
+    }
+    
+    @keyframes fillProgress {
+        0% { width: 0; }
+        50% { width: 100%; }
+        100% { width: 0; }
+    }
+    
+    
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 5px;
+        animation: bounce 1s infinite alternate; 
+        background-color: #3498db;
+    }
+    
+    .dot1 { 
+        animation-delay: 0s; 
+        animation-timing-function: ease-in; 
+    }
+    
+    .dot2 { 
+        animation-delay: 0.1s;
+        animation-timing-function: ease-out;
+    }
+    
+    .dot3 { 
+        animation-delay: 0.2s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    .dot4 { 
+        animation-delay: 0.3s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    
+    .dot5 { 
+        animation-delay: 0.4s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes bounce {
+        from { transform: translateY(0); }
+        to { transform: translateY(-30px); }
+    }
+    
+    
+    .spinner {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgba(0,0,0,0.1);
+        border-top-color: #e74c3c;
+        border-radius: 50%;
+        top: calc(50% - 25px);
+        right: 30px;
+        animation: spin 1s linear infinite; 
+    }
+    
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    
+    
+    .loading-text {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        animation: pulse 2s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes pulse {
+        0% { opacity: 0.3; }
+        50% { opacity: 1; }
+        100% { opacity: 0.3; }
+    }
+    
+    
+    .hover-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    
+    .card {
+        position: relative;
+        width: 250px;
+        height: 180px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card h3 {
+        margin: 0 0 15px 0;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .card p {
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    .card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(83, 51, 237, 0.7), rgba(188, 80, 144, 0.7));
+        transform: translateY(100%);
+        transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 1;
+    }
+    
+    
+    .card:hover::after {
+        transform: translateY(0);
+    }
+    
+    
+    .card:hover h3,
+    .card:hover p {
+        color: white;
+        transition: color 0.3s ease 0.2s; 
+    }
+    
+    
+    

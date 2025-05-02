@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0.1, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        .happy>h2::before {
+            content: "😊 ";
+        }
+
+        .meh>h2::before {
+            content: "😐 ";
+        }
+
+        .sad>h2::before {
+            content: "😢 ";
+        }
+
+        div {
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .happy {
+            background-color: palegoldenrod;
+        }
+
+        .sad {
+            background-color: lightblue;
+        }
+
+        .meh {
+            background-color: #ddd;
+        }
+
+        h2::first-letter {
+            font-size: 150%;
+        }
+        button::before {
+            content: "❤️ Like";
+        }
+        button:hover::before {
+            content: "💖 Like";
+        }
+        button {
+            border-radius: 20px;
+            border:0;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 24px;
+        }
+        th, td {
+            border: 1px solid #888;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entry happy">
+        <h2>Feeling Great!</h2>
+        <p>Today was awesome. I didn't finished my homework but played outside!</p>
+        <button class="like-button"></button>
+    </div>
+    <div class="entry sad">
+        <h2>Feeling Sad!</h2>
+        <p>Today was sad. I finish my homework and didn't played outside!</p>
+        <button class="like-button"></button>
+    </div>
+    <div class="entry meh">
+        <h2>Feeling Meh!</h2>
+        <p>Today was meh. I didn't finish my homework and didn't played outside!</p>
+        <button class="like-button"></button>
+    </div>
+    <table>
+        <tr>
+            <th>Emotion</th>
+            <th>Emoji</th>
+        </tr>
+        <tr>
+            <td>😄 Happy</td>
+            <td>😀</td>
+        </tr>
+        <tr>
+            <td>😐 Meh</td>
+            <td>😐</td>
+        </tr>
+        <tr>
+            <td>😢 Sad</td>
+            <td>😢</td>
+        </tr>
+    </table>
+</body>
+
+</html>
