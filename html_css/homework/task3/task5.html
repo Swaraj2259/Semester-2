@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Layout</title>
+  <style>
+    .dashboard {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      height: 100vh;
+    }
+    header {
+      grid-area: header;
+      background: #333;
+      color: white;
+      padding: 1em;
+    }
+    nav {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 1em;
+    }
+    main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 1em;
+    }
+    .widget {
+      background: #eaeaea;
+      padding: 1em;
+    }
+    footer {
+      grid-area: footer;
+      background: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .dashboard {
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <header>Dashboard</header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="widget">Weather Widget</div>
+      <div class="widget">News Feed</div>
+      <div class="widget">Calendar</div>
+    </main>
+    <footer>&copy; 2025 Dashboard</footer>
+  </div>
+</body>
+</html>

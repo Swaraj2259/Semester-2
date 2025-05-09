@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Exercises Combined</title>
+  <style>
+    /* Global styles for demo */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #fafafa;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h1 {
+      margin-bottom: 10px;
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Exercise 1: Profile Card */
+    .card {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    #name {
+      color: darkblue;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      font-style: italic;
+      color: #333;
+    }
+
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      color: darkgreen;
+    }
+
+    /* Exercise 2: Navigation Menu */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: red;
+    }
+
+    nav ul li:first-child a {
+      background-color: lightblue;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    /* Exercise 3: Form Styling */
+    form input {
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+    }
+
+    form input:focus {
+      border-color: #66ccff;
+      outline: none;
+    }
+
+    form button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="email"] {
+      background-color: #f9f9f9;
+    }
+
+    /* Exercise 4: Pseudo-elements */
+    article h3::before {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: red;
+      margin-bottom: 5px;
+    }
+
+    article p::first-line {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    article p::before {
+      content: "* ";
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* Exercise 5: Advanced Targeting */
+    .blog h3 {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .blog article:nth-child(3) p {
+      color: purple;
+      font-style: italic;
+    }
+
+    .blog article:nth-child(3) {
+      background-color: #f0f8ff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Exercise 1: Profile Card</h1>
+    <div class="card">
+      <h2 id="name">Alex Johnson</h2>
+      <p class="bio">Front-end Developer from New York</p>
+      <a href="#">View Profile</a>
+    </div>
+  </section>
+
+  <section>
+    <h1>Exercise 2: Navigation Menu</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section>
+    <h1>Exercise 3: Form Styling</h1>
+    <form>
+      <label>Email:</label>
+      <input type="email" />
+
+      <label>Password:</label>
+      <input type="password" />
+
+      <button>Login</button>
+    </form>
+  </section>
+
+  <section>
+    <h1>Exercise 4: Pseudo-elements</h1>
+    <article>
+      <h3>Breaking News</h3>
+      <p>Some important text goes here. This is a sample paragraph to demonstrate pseudo-elements.</p>
+    </article>
+  </section>
+
+  <section class="blog">
+    <h1>Exercise 5: Advanced Targeting</h1>
+    <h2>Blog Posts</h2>
+    <article>
+      <h3>Post One</h3>
+      <p>Text of post one.</p>
+    </article>
+    <article>
+      <h3>Post Two</h3>
+      <p>Text of post two.</p>
+    </article>
+  </section>
+
+</body>
+</html>

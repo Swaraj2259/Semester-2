@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      gap: 10px;
+    }
+    header {
+      grid-area: header;
+      background: #333;
+      color: white;
+      padding: 1em;
+    }
+    nav {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 1em;
+      position: fixed;
+      height: 100%;
+      width: 200px;
+    }
+    main {
+      grid-area: content;
+      padding: 1em;
+      margin-left: 210px; /* To account for fixed sidebar */
+      overflow-y: auto;
+    }
+    footer {
+      grid-area: footer;
+      background: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>My Portfolio</header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Welcome</h1>
+      <p>This is the main content area.</p>
+    </main>
+    <footer>&copy; 2025 My Portfolio</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Website</title>
+  <style>
+    .news-layout {
+      display: grid;
+      grid-template-areas:
+        "main main sidebar";
+      grid-template-columns: 2fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .main-headline {
+      grid-area: main;
+      background: #fff7e6;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .sidebar-articles {
+      grid-area: sidebar;
+      background: #e6f7ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .news-layout {
+        grid-template-areas:
+          "main"
+          "sidebar";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="news-layout">
+    <div class="main-headline">📰 Breaking News Headline</div>
+    <div class="sidebar-articles">
+      <p>📌 Side Article 1</p>
+      <p>📌 Side Article 2</p>
+    </div>
+  </div>
+</body>
+</html>

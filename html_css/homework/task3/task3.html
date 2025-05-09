@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Layout</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    header {
+      grid-area: header;
+      background: #333;
+      color: white;
+      padding: 1em;
+    }
+    main {
+      grid-area: main;
+    }
+    aside {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 1em;
+    }
+    footer {
+      grid-area: footer;
+      background: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>My Blog</header>
+    <main>
+      <h2>this blog is about me </h2>
+      <p>Blog post content goes here.</p>
+    </main>
+    <aside>
+      <h3>About Me</h3>
+      <p>my name is swaraj.</p>
+    </aside>
+    <footer>&copy; 2025 swaraj wattamwar</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dev Handbook</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #456f9a, #b0c0d1);
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      background-color: rgb(14, 107, 107);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    details {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    summary::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    p {
+      margin-top: 10px;
+      animation: fadeIn 0.4s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Dev Handbook</h1>
+
+  <details name="notes">
+    <summary>HTML Basics</summary>
+    <p>Learn the structure of web pages using semantic elements like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt;.</p>
+  </details>
+
+  <details name="notes">
+    <summary>CSS Styling</summary>
+    <p>Understand how to style elements using selectors, properties, and values to enhance the visual appearance.</p>
+  </details>
+
+  <details name="notes">
+    <summary>JavaScript Essentials</summary>
+    <p>Discover how to add interactivity to your web pages using variables, functions, and event listeners.</p>
+  </details>
+
+  <details name="notes">
+    <summary>Responsive Design</summary>
+    <p>Explore techniques like media queries and flexible layouts to make your website look great on all devices.</p>
+  </details>
+
+  <details name="notes">
+    <summary>Version Control with Git</summary>
+    <p>Learn how to track changes in your codebase and collaborate with others using Git and GitHub.</p>
+  </details>
+</body>
+</html>

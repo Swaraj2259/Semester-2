@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Layout</title>
+  <style>
+    .social-layout {
+      display: grid;
+      grid-template-areas: "profile feed sidebar";
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .profile { grid-area: profile; background: #e0f7fa; padding: 15px; border-radius: 10px; }
+    .feed { grid-area: feed; background: #fff8e1; padding: 15px; border-radius: 10px; }
+    .sidebar { grid-area: sidebar; background: #f3e5f5; padding: 15px; border-radius: 10px; }
+
+    @media (max-width: 768px) {
+      .social-layout {
+        grid-template-areas:
+          "profile"
+          "feed"
+          "sidebar";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="social-layout">
+    <div class="profile">🙋‍♂️ Profile Section</div>
+    <div class="feed">📰 News Feed</div>
+    <div class="sidebar">📌 Sidebar Content</div>
+  </div>
+</body>
+</html>

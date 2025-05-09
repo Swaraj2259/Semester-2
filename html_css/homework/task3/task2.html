@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Photo Gallery</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="" alt="Photo 1">
+    <img src="" alt="Photo 2">
+    <img src="" alt="Photo 3">
+    <img src="" alt="Photo 4">
+    <img src="" alt="Photo 5">
+    <img src="" alt="Photo 6">
+  </div>
+</body>
+</html>
