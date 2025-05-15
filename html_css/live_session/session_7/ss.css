@@ -1,0 +1,85 @@
+.demo1 {
+    height: 400px;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightcoral;
+   display: table;
+}
+.demo1 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    /* display: table-cell; */
+    text-align: center;
+    vertical-align:text-bottom;
+   
+}
+img{
+    width: 100px;
+    height: 100px;
+
+ 
+}
+.abc{
+     display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.demo2 {
+    height: 200px;
+    width: 200px;
+   box-shadow: 5px 5px 5px 10px gray;
+   
+    background-color: lightblue;
+}
+.top_div{
+
+    background-color: lightblue;
+    text-align: center;
+    height: 100px;
+    margin:30px ;
+    box-shadow: 0px -10px 5px -5px gray;
+}
+.left_div{
+    background-color: lightblue;
+    text-align: center;
+    height: 100px;
+    margin:30px ;
+    box-shadow: -10px 0px 5px -5px gray;
+}
+.right_div{
+    background-color: lightblue;
+    text-align: center;
+    height: 100px;
+    margin:30px ;
+    box-shadow: 10px 0px 5px -5px gray;
+}
+.bottom_div{
+    background-color: lightblue;
+    text-align: center;
+    height: 100px;
+    margin:30px ;
+    box-shadow: 0px 10px 5px -5px gray;
+}
+
+
+.btn{
+    background-color: lightblue;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 16px;
+    margin: 40px 200px;
+    cursor: pointer;
+    box-shadow: 15px 15px 5px -5px rgb(122, 146, 147);
+}
+
+.color {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6a00, #490425); /* gradient colors */
+   -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}

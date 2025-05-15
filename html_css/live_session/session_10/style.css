@@ -1,0 +1,61 @@
+
+
+.transform_css_2{
+    height: 300px;
+    width: 400px;
+    margin: 150px;
+    background-color: rgb(167, 205, 121);
+    font-size: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 2s;
+}
+
+.transform_css_2:hover{
+    transform: rotateY(180deg);
+}
+
+.transform_css_3{
+    height: 300px;
+    width: 400px;
+    margin: 150px;
+    background-color: rgb(238, 191, 130);
+    font-size: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 2s;
+    transform-origin: bottom right;
+}
+
+.transform_css_3:hover{
+    /* transform: rotate(360deg); */
+    -webkit-animation: swing-top-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: swing-top-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.transform_css_4{
+    height: 300px;
+    width: 400px;
+    margin: 150px;
+    background-color: rgb(238, 191, 130);
+    font-size: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.transform_css_4:hover{
+   transform: scaleX(1);
+    transition: all 2s;
+}
+
+.child_css4{
+    height: 30px;
+    width: 300px;
+    margin: px;
+    background-color: rgb(238, 191, 130);
+    font-size: 40px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    transition: all 2s;
+}

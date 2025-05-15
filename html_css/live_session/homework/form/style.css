@@ -1,0 +1,188 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6ccfc;
+}
+
+.main-box {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+.main-box {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left-box, .right-box {
+    padding: 20px;
+}
+
+.left-box {
+    background-color: #7a71ff;
+    color: white;
+    text-align: center;
+}
+
+.left-box img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.right-box {
+    background-color: white;
+}
+
+.right-box form {
+    display: block;
+}
+
+.right-box h2 {
+    color: #7a71ff;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #7a71ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.google {
+    background-color: white;
+    color: black;
+    border: 1px solid #aaa;
+}
+
+button.facebook {
+    background-color: white;
+    color: black;
+    border: 1px solid #aaa;
+}
+
+a {
+    color: #7a71ff;
+    text-decoration: none;
+} */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6ccfc;
+}
+
+.main-box {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Left Side: Image and Text */
+.left-box {
+    width: 40%;
+    background-color: #7a71ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.left-box h2 {
+    margin-top: 20px;
+}
+
+.left-box p {
+    margin: 5px 0;
+}
+
+/* Right Side: Form */
+.right-box {
+    width: 60%;
+    padding: 30px 40px;
+    background-color: white;
+}
+
+.right-box h2 {
+    color: #7a71ff;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #7a71ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.google,
+button.facebook {
+    background-color: white;
+    color: black;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+}
+
+a {
+    color: #7a71ff;
+    text-decoration: none;
+}

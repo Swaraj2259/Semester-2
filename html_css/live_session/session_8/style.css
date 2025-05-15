@@ -1,0 +1,131 @@
+.inline_1 {
+    border: 2px solid black;
+    padding: 2px;
+
+}
+
+.box1 {
+    display: inline;
+}
+
+.flex_1 {}
+
+.child_div {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    /* width: 100px; */
+    /* height: 100px; */
+}
+
+
+.main_div {
+    padding: 100px;
+    border: 2px dotted black;
+    display: flex;
+    margin-top: 200px;
+    height: 200px;
+    /* align-items: center; */
+
+
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+
+
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+.main_div2 {
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 30px;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+}
+
+.flex_chlid {
+    background-color: rgb(71, 136, 158);
+    color: rgb(242, 234, 234);
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /* flex-grow: 1; */
+}
+
+.main_div3 {
+    border: 10px solid black;
+    padding: 10px;
+    width: 600px;
+    height: 600px;
+    margin: 150px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_div3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 9%;
+    /* margin: 250px; */
+    /* justify-content: center; */
+}
+
+.navbar {
+  
+  background-color:  rgb(198, 167, 162);
+  padding: 20px ;
+  border-radius: 20px;
+    margin: 30px;
+}
+
+.navbar ul {
+    background-color: rgb(198, 167, 162);
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial,serif;
+  font-size: 20px;
+}
+.main_div{
+    border: 2px solid rgb(81, 138, 92);
+    width:300px ;
+    height: 200px;
+    background-color: #e76a6a;
+    position: relative;
+    margin: 40px;
+}
+
+.child_div{
+    width: 150px;
+    height: 150px;
+    background-color: #80cba0;
+    border: 5px solid rgb(205, 91, 91);
+    position: absolute;
+    bottom: -40px;
+    left: -40px;    
+}
+
