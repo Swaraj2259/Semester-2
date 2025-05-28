@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Color</title>
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.5s ease;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #555;
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #444;
+      cursor: pointer;
+      transition: color 0.5s ease, transform 0.3s ease;
+    }
+
+    h2:hover {
+      transform: scale(1.1);
+    }
+
+    #toast {
+      visibility: hidden;
+      min-width: 150px;
+      margin-top: 20px;
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 10px;
+      position: fixed;
+      left: 50%;
+      top: 80px;
+      transform: translateX(-50%);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #toast.show {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="changeColor()">Flip Color</button>
+  <button onclick="resetColor()">Reset</button>
+  <h2 id="colorCode" onclick="copyColor()">#FFFFFF</h2>
+
+  <div id="toast">Color Copied!</div>
+
+  <script>
+function changeColor() {
+  const color = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+  document.body.style.backgroundColor = color;
+
+  const code = document.getElementById("colorCode");
+  code.innerText = color;
+
+//   // Get RGB values from hex
+//   const r = parseInt(color.substr(1, 2), 16);
+//   const g = parseInt(color.substr(3, 2), 16);
+//   const b = parseInt(color.substr(5, 2), 16);
+
+//   // Calculate brightness
+//   const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+}
+    function resetColor() {
+      document.body.style.backgroundColor = "#FFFFFF";
+      const code = document.getElementById("colorCode");
+      code.innerText = "#FFFFFF";
+      code.style.color = "#444";
+    }
+
+    function copyColor() {
+      const color = document.getElementById("colorCode").innerText;
+      navigator.clipboard.writeText(color);
+      showToast();
+    }
+
+    function showToast() {
+      const toast = document.getElementById("toast");
+      toast.className = "show";
+      setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 2000);
+    }
+  </script>
+
+</body>
+</html>
