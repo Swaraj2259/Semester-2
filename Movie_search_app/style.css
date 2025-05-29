@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+#movie-container {
+  margin-top: 20px;
+  background-color: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+}
