@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Traversal</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+    .box {
+      border: 2px solid black;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>HTML Nesting and DOM Tree</h2>
+  <p><strong>HTML Nesting</strong> means placing elements inside one another. A parent tag can contain child tags. For example, a <code>div</code> inside another <code>div</code>.</p>
+  <p><strong>DOM Tree</strong> is the hierarchical structure representing HTML elements as nodes. The root is <code>&lt;html&gt;</code>, and all elements are branches and leaves.</p>
+
+  <div class="box grandparent">
+    Grandparent
+    <div class="box parent">
+      Parent
+      <div class="box child">
+        Child
+        <button class="toggle-btn">Toggle Parent Highlight</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Access the child
+    const child = document.querySelector('.child');
+
+    // 1️⃣ parentElement
+    console.log("Child's Parent:", child.parentElement); // logs .parent div
+
+    // ➤ parentElement means the direct parent node of the selected element in the DOM tree.
+
+    // 2️⃣ .children
+    const parent = document.querySelector('.parent');
+    console.log("Children of .parent:", parent.children); // logs all element-type children (not text/comments)
+
+    // ➤ .children gives only HTML elements (ignores text/comments), while .childNodes gives all node types (text, comments, etc.)
+    console.log("All childNodes of .parent:", parent.childNodes);
+
+    // 3️⃣ .closest()
+    const closestBox = child.closest('.grandparent');
+    console.log("Closest ancestor with class .grandparent:", closestBox);
+
+    // ➤ .closest() searches *upwards* in the DOM to find the nearest ancestor that matches a selector (including the element itself).
+
+    // 4️⃣ Toggle class on parent when clicking button
+    // const button = document.querySelector('.toggle-btn');
+    // button.addEventListener('click', function () {
+    //   const parentBox = this.closest('.parent');
+    //   parentBox.classList.toggle('highlight');
+    // });
+
+    // // ➤ Event listeners wait for actions like clicks.
+    // // ➤ classList.toggle() adds/removes a class.
+    // // ➤ this refers to the clicked element.
+  </script>
+
+</body>
+</html>
