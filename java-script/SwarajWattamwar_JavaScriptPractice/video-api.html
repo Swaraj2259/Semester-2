@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Video API Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    video {
+      width: 60%;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #time-display {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎥 HTML5 Video API Demo</h1>
+
+  <!-- 🔹 Basic video element usage -->
+  <video id="myVideo" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- 🔹 Video control buttons -->
+  <div>
+    <button onclick="playVideo()">▶️ Play</button>
+    <button onclick="pauseVideo()">⏸️ Pause</button>
+    <button onclick="toggleMute()">🔇 Mute / Unmute</button>
+    <button onclick="jumpTo10()">⏩ Jump to 10s</button>
+  </div>
+
+  <!-- 🔹 Current playback time display -->
+  <div id="time-display">Current Time: 0s</div>
+
+  <script>
+    const video = document.getElementById("myVideo");
+    const timeDisplay = document.getElementById("time-display");
+
+    // ✅ Play video
+    function playVideo() {
+      video.play();
+    }
+
+    // ✅ Pause video
+    function pauseVideo() {
+      video.pause();
+    }
+
+    // ✅ Mute / Unmute video using .muted property
+    function toggleMute() {
+      video.muted = !video.muted;
+    }
+
+    // ✅ Update time display with .currentTime and ontimeupdate
+    video.ontimeupdate = () => {
+      timeDisplay.textContent = `Current Time: ${Math.floor(video.currentTime)}s`;
+    }
+
+    // ✅ Jump to 10 seconds using .currentTime
+    function jumpTo10() {
+      video.currentTime = 10;
+    }
+  </script>
+
+</body>
+</html>
