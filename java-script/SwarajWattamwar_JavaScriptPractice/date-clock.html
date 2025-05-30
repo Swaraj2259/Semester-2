@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date & Clock Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .clock, .timer {
+      font-size: 24px;
+      margin: 20px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⏰ JavaScript Date & Clock</h1>
+
+  <!-- 🔹 Current Date/Time -->
+  <div class="clock" id="dateTimeDisplay">Current Time: </div>
+  <button onclick="stopClock()">🛑 Stop Clock</button>
+
+  <!-- 🔹 Count-up Timer -->
+  <div class="timer" id="timerDisplay">Timer: 0s</div>
+
+  <!-- 🔹 Date Comparison Result -->
+  <div id="compareResult"></div>
+
+  <script>
+    // ✅ 1. Log current date/time using new Date()
+    const now = new Date();
+    console.log("Current Date & Time:", now);
+
+    // ✅ 2. What is Date object?
+    // The Date object represents a single moment in time in a platform-independent format.
+
+    // ✅ 3. Create real-time clock with setInterval()
+    const clockDisplay = document.getElementById("dateTimeDisplay");
+
+    function updateClock() {
+      const current = new Date();
+      clockDisplay.textContent = "Current Time: " + current.toLocaleTimeString();
+    }
+
+    // ✅ 4. setInterval() explanation:
+    // It runs a function repeatedly at specified time intervals (in milliseconds).
+    const clockInterval = setInterval(updateClock, 1000);
+
+    // ✅ 5. Stop Clock with clearInterval()
+    function stopClock() {
+      clearInterval(clockInterval);
+      clockDisplay.textContent += " (Stopped)";
+    }
+
+    // ✅ 6. Compare two dates
+    const date1 = new Date('2024-01-01');
+    const date2 = new Date('2025-01-01');
+
+    const compareOutput = document.getElementById("compareResult");
+
+    if (date1 < date2) {
+      compareOutput.textContent = "📆 date1 is earlier than date2";
+    } else if (date1 > date2) {
+      compareOutput.textContent = "📆 date2 is earlier than date1";
+    } else {
+      compareOutput.textContent = "📆 Both dates are the same.";
+    }
+
+    // ✅ 7. Timer that counts up to 10 seconds
+    let count = 0;
+    const timerDisplay = document.getElementById("timerDisplay");
+
+    const timer = setInterval(() => {
+      count++;
+      timerDisplay.textContent = "Timer: " + count + "s";
+      
+      // ✅ Combine timers and condition to stop at 10
+      if (count >= 10) {
+        clearInterval(timer);
+        timerDisplay.textContent += " (Stopped at 10s)";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
